@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # WanderTrail
 
 **Tagline:** *Trails to the places maps forget.*
@@ -128,3 +129,7 @@ Run a syntax check over the project from PowerShell:
 ```powershell
 Get-ChildItem -Recurse -Filter *.php | ForEach-Object { php -l $_.FullName }
 ```
+=======
+# wandertrail
+Its anout Hidden Gems of travel places including the torism functinality
+>>>>>>> 519f7c1f7b37168e12e69e6c1ff6d383f5396968
