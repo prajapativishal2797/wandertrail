@@ -1,0 +1,3 @@
+# Composer dependencies are restored with `composer install`.
+/vendor/
+
