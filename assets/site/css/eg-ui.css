@@ -1,0 +1,184 @@
+/*
+ * WanderTrail reusable UI components, built on the tokens in
+ * eg-tokens.css. New pages (auth screens now; listings/detail/admin in
+ * later phases) share these classes instead of one-off inline styles.
+ */
+
+.eg-page {
+    font-family: var(--eg-font);
+    color: var(--eg-ink);
+}
+
+/* Card */
+.eg-card {
+    background: var(--eg-surface);
+    border: 1px solid var(--eg-border);
+    border-radius: var(--eg-radius-lg);
+    box-shadow: var(--eg-shadow-md);
+}
+
+/* Buttons */
+.eg-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--eg-space-2);
+    padding: 12px 24px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.2;
+    border-radius: var(--eg-radius-pill);
+    border: 1px solid transparent;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color var(--eg-transition), border-color var(--eg-transition), color var(--eg-transition), transform var(--eg-transition), box-shadow var(--eg-transition);
+}
+
+.eg-btn:disabled,
+.eg-btn[aria-disabled="true"] {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.eg-btn-primary {
+    background: var(--eg-saffron);
+    color: #ffffff;
+}
+
+.eg-btn-primary:hover:not(:disabled) {
+    background: var(--eg-saffron-dark);
+}
+
+.eg-btn-primary:active:not(:disabled) {
+    transform: translateY(1px);
+}
+
+.eg-btn-outline {
+    background: transparent;
+    border-color: var(--eg-navy);
+    color: var(--eg-navy);
+}
+
+.eg-btn-outline:hover:not(:disabled) {
+    background: var(--eg-navy);
+    color: #ffffff;
+}
+
+.eg-btn-link {
+    background: transparent;
+    color: var(--eg-navy-soft);
+    padding: 4px 0;
+    border-radius: 0;
+}
+
+.eg-btn-link:hover {
+    color: var(--eg-saffron-dark);
+    text-decoration: underline;
+}
+
+.eg-btn:focus-visible,
+.eg-input:focus-visible,
+a.eg-btn:focus-visible {
+    outline: 3px solid var(--eg-focus);
+    outline-offset: 2px;
+}
+
+.eg-btn-block {
+    display: flex;
+    width: 100%;
+}
+
+/* Forms */
+.eg-field {
+    margin-bottom: var(--eg-space-4);
+    text-align: left;
+}
+
+.eg-label {
+    display: block;
+    margin-bottom: var(--eg-space-2);
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--eg-ink);
+}
+
+.eg-input {
+    width: 100%;
+    padding: 12px 14px;
+    font-size: 15px;
+    font-family: var(--eg-font);
+    color: var(--eg-ink);
+    background: #ffffff;
+    border: 1px solid var(--eg-border);
+    border-radius: var(--eg-radius-sm);
+    transition: border-color var(--eg-transition), box-shadow var(--eg-transition);
+}
+
+.eg-input:focus {
+    border-color: var(--eg-navy-soft);
+    box-shadow: 0 0 0 3px rgba(44, 62, 92, 0.15);
+    outline: none;
+}
+
+.eg-input[aria-invalid="true"] {
+    border-color: var(--eg-danger);
+}
+
+.eg-hint {
+    margin-top: var(--eg-space-1);
+    font-size: 13px;
+    color: var(--eg-ink-soft);
+}
+
+.eg-error-text {
+    margin-top: var(--eg-space-1);
+    font-size: 13px;
+    color: var(--eg-danger);
+}
+
+/* Alerts / flash messages */
+.eg-alerts {
+    margin-bottom: var(--eg-space-4);
+}
+
+.eg-alert {
+    padding: 14px 16px;
+    border-radius: var(--eg-radius-sm);
+    font-size: 14px;
+    margin-bottom: var(--eg-space-3);
+    border: 1px solid transparent;
+}
+
+.eg-alert-success {
+    background: #eaf4ec;
+    border-color: #cfe6d4;
+    color: var(--eg-success);
+}
+
+.eg-alert-danger {
+    background: #fbeae6;
+    border-color: #f3cec4;
+    color: var(--eg-danger);
+}
+
+.eg-alert-info {
+    background: #eaf0f7;
+    border-color: #cfdcec;
+    color: var(--eg-navy-soft);
+}
+
+/* Empty state */
+.eg-empty {
+    text-align: center;
+    padding: var(--eg-space-7) var(--eg-space-4);
+    color: var(--eg-ink-soft);
+}
+
+/* Utility */
+.eg-muted {
+    color: var(--eg-ink-soft);
+}
+
+.eg-text-center {
+    text-align: center;
+}

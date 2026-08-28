@@ -1,0 +1,66 @@
+/*
+ * WanderTrail design tokens.
+ *
+ * A warm, premium travel palette inspired by vibrant journeys,
+ * terracotta pottery, indigo-night skies over the Rann, and its coastline.
+ * Every new/rebuilt page should style itself from these variables rather
+ * than introducing new colors, so the site reads as one system instead of
+ * three different templates glued together.
+ *
+ * System fonts only (no external font/CDN dependency) so pages render
+ * identically offline on WAMP with no risk of a blocked network request.
+ */
+:root {
+    /* Brand */
+    --eg-saffron: #e8952f;
+    --eg-saffron-dark: #c97717;
+    --eg-terracotta: #bd5b3a;
+    --eg-navy: #1c2b45;
+    --eg-navy-soft: #2c3e5c;
+    --eg-cream: #fbf5ea;
+    --eg-cream-deep: #f2e6d2;
+    --eg-green: #4f7a5b;
+
+    /* Semantic */
+    --eg-bg: var(--eg-cream);
+    --eg-surface: #ffffff;
+    --eg-ink: #241d16;
+    --eg-ink-soft: #5a5044;
+    --eg-border: #e7dcc8;
+    --eg-success: #3f7d55;
+    --eg-danger: #b3452f;
+    --eg-focus: #2c3e5c;
+
+    /* Type */
+    --eg-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --eg-font-display: Georgia, "Times New Roman", serif;
+
+    /* Space (4px base) */
+    --eg-space-1: 4px;
+    --eg-space-2: 8px;
+    --eg-space-3: 12px;
+    --eg-space-4: 16px;
+    --eg-space-5: 24px;
+    --eg-space-6: 32px;
+    --eg-space-7: 48px;
+    --eg-space-8: 64px;
+
+    /* Shape */
+    --eg-radius-sm: 8px;
+    --eg-radius-md: 14px;
+    --eg-radius-lg: 20px;
+    --eg-radius-pill: 999px;
+
+    /* Elevation */
+    --eg-shadow-sm: 0 1px 2px rgba(28, 43, 69, 0.08), 0 1px 1px rgba(28, 43, 69, 0.04);
+    --eg-shadow-md: 0 8px 24px rgba(28, 43, 69, 0.12);
+    --eg-shadow-lg: 0 16px 48px rgba(28, 43, 69, 0.18);
+
+    --eg-transition: 160ms ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    :root {
+        --eg-transition: 0ms;
+    }
+}

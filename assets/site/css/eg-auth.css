@@ -1,0 +1,79 @@
+/*
+ * Layout for the login / register / forgot-password / reset-password
+ * screens. Depends on eg-tokens.css and eg-ui.css being loaded first.
+ */
+
+.eg-auth-shell {
+    min-height: calc(100vh - 400px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--eg-space-8) var(--eg-space-4);
+    background: linear-gradient(180deg, var(--eg-cream) 0%, var(--eg-cream-deep) 100%);
+}
+
+.eg-auth-card {
+    width: 100%;
+    max-width: 440px;
+    padding: var(--eg-space-7) var(--eg-space-6);
+}
+
+.eg-auth-card--wide {
+    max-width: 640px;
+}
+
+.eg-auth-eyebrow {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--eg-terracotta);
+    margin-bottom: var(--eg-space-2);
+}
+
+.eg-auth-title {
+    font-family: var(--eg-font-display);
+    font-size: 28px;
+    color: var(--eg-navy);
+    margin: 0 0 var(--eg-space-2);
+}
+
+.eg-auth-subtitle {
+    color: var(--eg-ink-soft);
+    margin: 0 0 var(--eg-space-6);
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.eg-auth-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--eg-space-4);
+}
+
+@media (max-width: 560px) {
+    .eg-auth-row {
+        grid-template-columns: 1fr;
+    }
+
+    .eg-auth-card {
+        padding: var(--eg-space-6) var(--eg-space-4);
+    }
+}
+
+.eg-auth-footer {
+    margin-top: var(--eg-space-5);
+    text-align: center;
+    font-size: 14px;
+    color: var(--eg-ink-soft);
+}
+
+.eg-auth-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    margin-top: calc(-1 * var(--eg-space-2));
+    margin-bottom: var(--eg-space-4);
+}
